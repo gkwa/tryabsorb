@@ -41,11 +41,6 @@ func init() {
 }
 
 func test1() {
-	// Define the contents of the config file
-	config := `username: YOUR_USERNAME
-password: YOUR_PASSWORD
-server: YOUR_SERVER`
-
 	fmt.Println(fmt.Sprintf("USERPROFILE:%s", os.Getenv("USERPROFILE")))
 	fmt.Println(fmt.Sprintf("ALLUSERSPROFILE:%s", os.Getenv("ALLUSERSPROFILE")))
 }
