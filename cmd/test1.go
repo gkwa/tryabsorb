@@ -43,4 +43,5 @@ func init() {
 func test1() {
 	fmt.Println(fmt.Sprintf("USERPROFILE:%s", os.Getenv("USERPROFILE")))
 	fmt.Println(fmt.Sprintf("ALLUSERSPROFILE:%s", os.Getenv("ALLUSERSPROFILE")))
+	fmt.Println(fmt.Sprintf("AWS_EC2_METADATA_DISABLED:%s", os.Getenv("AWS_EC2_METADATA_DISABLED")))
 }
