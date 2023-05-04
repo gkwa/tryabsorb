@@ -46,19 +46,6 @@ func test1() {
 password: YOUR_PASSWORD
 server: YOUR_SERVER`
 
-	file, err := os.Create(os.Getenv("HOME") + "/.tryabsorb.yaml")
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-	defer file.Close()
-
-	// Write the contents of the config file to the file
-	_, err = file.WriteString(config)
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-
-	fmt.Println("Config file created successfully!")
+	fmt.Println(fmt.Sprintf("USERPROFILE:%s", os.Getenv("USERPROFILE")))
+	fmt.Println(fmt.Sprintf("ALLUSERSPROFILE:%s", os.Getenv("ALLUSERSPROFILE")))
 }
