@@ -46,8 +46,7 @@ func test1() {
 password: YOUR_PASSWORD
 server: YOUR_SERVER`
 
-	// Create a file at ~/.deliveryhalf.yaml
-	file, err := os.Create(os.Getenv("HOME") + "/.deliveryhalf.yaml")
+	file, err := os.Create(os.Getenv("HOME") + "/.tryabsorb.yaml")
 	if err != nil {
 		fmt.Println(err)
 		return
